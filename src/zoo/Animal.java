@@ -1,7 +1,15 @@
+package Zoo;
+
 abstract public class Animal {
     private String name;
     private int age;
     private String species;
+
+    public Animal(String name, int age, String species) {
+        this.name = name;
+        this.age = age;
+        this.species = species;
+    }
 
     public String getName() {
         return name;
@@ -27,13 +35,9 @@ abstract public class Animal {
         this.species = species;
     }
 
-    public Animal(String name, int age, String species) {
-        this.name = name;
-        this.age = age;
-        this.species = species;
-    }
     public abstract void makeSound();
-    public String getInfo(){
+@Override
+    public String toString() {
         return name + ", age is: " + age + ", " + species;
     }
 }
