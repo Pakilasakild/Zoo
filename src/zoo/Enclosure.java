@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Enclosure {
     private String name;
     private String habitatType;
-    ArrayList<Animal> animals = new ArrayList<>();
+    private ArrayList<Animal> animals = new ArrayList<>();
 
     public Enclosure(String habitatType, String name) {
         this.habitatType = habitatType;
